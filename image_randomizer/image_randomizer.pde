@@ -5,7 +5,6 @@ PImage[] images = new PImage[numImg]; //New array of PImage
 void setup() {
   size(426, 276);
   frameRate(1);
-  //images = new PImage[numImg];
   for(int i = 0; i < images.length; i++){
   images[i]=loadImage(str(i) + ".jpg");
 }
