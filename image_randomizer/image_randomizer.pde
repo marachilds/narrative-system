@@ -8,7 +8,7 @@ void setup() {
   
   // Load in each image
   for(int i = 0; i < images.length; i++){
-  images[i]=loadImage(str(i) + ".jpg");
+  images[i] = loadImage(str(i) + ".jpg");
   }
 }
 
