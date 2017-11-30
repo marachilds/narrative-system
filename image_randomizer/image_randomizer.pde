@@ -6,7 +6,7 @@ void setup() {
   size(426, 276); // Base proportions are 142:92
   frameRate(0.2); // 5 seconds per image
   
-  //Load in each image
+  // Load in each image
   for(int i = 0; i < images.length; i++){
   images[i]=loadImage(str(i) + ".jpg");
   }
