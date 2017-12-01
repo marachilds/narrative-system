@@ -17,7 +17,7 @@ void setDmxChannel(int channel, int value) { // Convert the parameters into a me
 void setup() {
   printArray(Serial.list()); // Shows available serial ports on the system 
   // Change 0 to select the appropriate port as required. 
-  String portName = Serial.list()[3]; 
+  String portName = Serial.list()[0]; 
   myPort = new Serial(this, portName, 9600);
   
   size(426, 276); // Base proportions are 142:92
@@ -47,7 +47,8 @@ void draw() {
     case 7:
     case 12:
     case 19:
-      colorsNum = 3; // Yellow
+      //YELLOW
+      println("THREE");
       break;
     case 1:
     case 11:
@@ -58,7 +59,7 @@ void draw() {
       //GREEN
       channel = 3;
       value = 150;
-      println("THREE");
+      println("FOUR");
       break;
     case 3:
     case 4:
@@ -66,13 +67,14 @@ void draw() {
       //BLUE
       channel = 3;
       value = 100;
-      println("FOUR");
+      println("FIVE");
       break;
     case 5:
     case 10:
     case 14:
     case 20:
-      colorsNum = 2; // Orange
+      //ORANGE
+      println("TWO");
       break;
     case 6:
     case 9:
@@ -80,12 +82,13 @@ void draw() {
       //RED
       channel = 3;
       value = 255;
-      println("RED");
+      println("ONE");
       break;
     case 16:
     case 21:
     case 22:
-      colorsNum = 0; // White
+      //WHITE
+      println("ZERO");
       break;
   }
   
