@@ -2,30 +2,17 @@
 /*
 Chroma-Q™
 Color Split™
-Mode 7: Hue, Sat,Luminosity 
-Channel     Value
-1 =         Colour Roll Speed
-2 =         Colour Range
-3 =         Hue 1
-4 =         Saturation 1
-5 =         Intensity 1
-6 =         Hue 2
-7 =         Saturation 2
-8 =         Intensity 2 
 
 
 Mode 8: RGB
 
 Channel   Value 
-1          Intensity: 0-100
-2          Red #1: 0-100
-3          Green #1: 0-100
-4          Blue #1: 0-100
-5.         Master Intensity: 0-100
-6          Red #2: 0-100
-7          Green #2: 0-100
-8          Blue #2: 0-100
-8.         Master Intensity: 0-100         
+
+1          Red #1: 0-255
+2          Green #1: 0-255
+3          Blue #1: 0-255
+4          Amber #1: 0-255
+      
 */
 
 import processing.serial.*; // Import Serial library to talk to Arduino 
